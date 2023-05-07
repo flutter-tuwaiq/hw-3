@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h1>Homework #3</h1>
 
 <h3>Submission instructions: </h3>
@@ -62,3 +63,7 @@ Submit by 8/5/2023 10:00 AM
 
 # Note
 Make sure that the name of the PR is your `firstname lastname`
+=======
+A sample command-line application with an entrypoint in `bin/`, library code
+in `lib/`, and example unit test in `test/`.
+>>>>>>> 9666901 (HW3)
