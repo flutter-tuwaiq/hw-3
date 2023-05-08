@@ -5,7 +5,7 @@ class Camera {
   String? _price;
 
   // Camera(this._id, this._brand, this._color, this._price);
-
+//
   set setid(String id) {
     _id = id;
   }
