@@ -7,32 +7,32 @@ class Camera {
 
   Camera(this._id, this._brand, this._color, this._price);
 
-  int get id {
+  int get GetId {
     return _id;
   }
-  set id(int value) {
+  set SetId(int value) {
     _id = value;
   }
 
-  String get brand {
+  String get GetBrand {
     return _brand;
   }
-  set brand(String value) {
+  set SetBrand(String value) {
     _brand = value;
   }
 
-  String get color {
+  String get GetColor {
     return _color;
   }
-  set color(String value) {
+  set SetColor(String value) {
     _color = value;
   }
 
-  double get price {
+  double get GetPrice {
     return _price;
   }
 
-  set price(double value) {
+  set SetPrice(double value) {
     _price = value;
   }
 

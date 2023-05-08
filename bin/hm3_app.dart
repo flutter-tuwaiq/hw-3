@@ -113,14 +113,24 @@ for (var house in houses) {
 }
 
 
-//Objects of Class Camera
+// Class Camera
 Camera camera1 = Camera(1, 'Canon', 'Black', 1000.0);
 Camera camera2 = Camera(2, 'Nikon', 'Red', 2000.0);
 Camera camera3 = Camera(3, 'Sony', 'White', 3000.0);
 
-print("Camera : ${camera1.id} , ${camera1.brand} , ${camera1.color} , ${camera1.price}");
-print("Camera : ${camera2.id} , ${camera2.brand} , ${camera2.color} , ${camera2.price}");
-print("Camera : ${camera3.id} , ${camera3.brand} , ${camera3.color} , ${camera3.price}");
+//Using set Method
+camera1.SetId = 4;
+camera1.SetColor = 'Blue';
+
+camera2.SetPrice = 4000;
+camera2.SetBrand = 'Any';
+
+camera3.SetPrice = 1500;
+
+//using Get Method
+print("Camera : ${camera1.GetId} , ${camera1.GetBrand} , ${camera1.GetColor} , ${camera1.GetPrice}");
+print("Camera : ${camera2.GetId} , ${camera2.GetBrand} , ${camera2.GetColor} , ${camera2.GetPrice}");
+print("Camera : ${camera3.GetId} , ${camera3.GetBrand} , ${camera3.GetColor} , ${camera3.GetPrice}");
 
 
 
