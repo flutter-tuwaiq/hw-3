@@ -123,6 +123,7 @@ print(" enter num1 = ");
 
 
 
+//--------------------------------------------------//
 
 
 
@@ -133,10 +134,22 @@ print(" enter num1 = ");
 
 
 
+
+
+
 //7. Write a function in Dart that can reverse a given string.
 
  var my_name = "Haifa";
   print(my_name.split('').reversed.join()); 
+
+
+
+
+//--------------------------------------------------//
+
+
+
+
 
 //8. Generate a list of names and print them all using a loop.
 
@@ -150,6 +163,25 @@ for(int i = 0 ; i<=names.length-1 ; i++){
  }
 
 
+
+
+//--------------------------------------------------//
+
+
+
+//9. Create a set of fruits and print them all using a loop.
+
+
+  Set<String> fruits = {'dragon fruits', 'pineapple', 'red barry'};
+
+   for (var e in fruits) {
+    print(e);
+  }
+
+
+
+
+   
 // 10. Declare an empty list of strings called "days", then use the
 // add method to insert the names of the seven days of the
 // week, and finally, print all the days
@@ -169,6 +201,17 @@ days.add("Saturday");
 
 
 
+
+
+
+
+//--------------------------------------------------//
+
+
+
+
+
+
 // 11. Create a map with keys "name" and "phone", and store some
 // values in it. Then, use the "where" method to find all keys
 // that have a length of four.
@@ -177,6 +220,11 @@ Map map = { "name":"Haifa", "phone":12345};
 print(map.keys.where((keys) => keys.length==4,));
 
 
+
+
+
+
+//--------------------------------------------------//
 
 
 
@@ -208,6 +256,15 @@ Laptop op3 = Laptop();
  print(" ID = ${op3.id} "+ " Name = ${op3.name}"+" Ram = ${op3.ram}");
 
 
+
+
+
+
+//--------------------------------------------------//
+
+
+
+
 // 13. Develop a class called "House" with the properties "id",
 // "name", and "price", and create a constructor for it.
 // Generate three objects of this class, add them to a list, and
@@ -230,6 +287,11 @@ print(list[i].name);
 
 
 
+
+
+//--------------------------------------------------//
+
+
 // 14. Create a class called "Camera" with private properties "id",
 // "brand", "color", and "price". Generate a getter and a
 // setter method for accessing and updating the values.
@@ -248,7 +310,7 @@ for(int i = 0 ; i<=list2.length-1;i++){
 print(list2[i].id);
  print(list2[i].brand);
   print(list2[i].color);
- print(list2[i].price);
+print(list2[i].price);
 
 
 }
