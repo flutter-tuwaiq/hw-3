@@ -37,7 +37,7 @@ int phone_number = 12345678;
  print(" Enter the width of squar  =  ");
  int? width ;
 width = int.parse(stdin.readLineSync()!);  //input from user
- print("Enter the hight of squar =  ");
+ print("Enter the hight of squar =    ");
 
 int? hight ;
 // hight = int.parse(stdin.readLineSync()!); //input from user
