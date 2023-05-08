@@ -1,6 +1,4 @@
-import 'dart:math';
-
-void main(List<String> args) {
+void main() {
   laptop ttt = laptop();
   ttt.id = 423;
   ttt.name = "m1";
