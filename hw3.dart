@@ -3,6 +3,7 @@ import 'dart:math';
 // import 'package:hw3/hw3.dart' as hw3;
 
 void main(List<String> arguments) {
+  
   //1. Define two constants, one of type integer for phone number and another of type string for your name.
   const int phoneNumber = 0512345678;
   const String name = "Abdulmohsen";
@@ -79,10 +80,12 @@ void main(List<String> arguments) {
 
   /*11. Create a map with keys `"name"` and `"phone"`, and store some values in it.
         Then, use the `"where"` method to find all keys that have a length of four.*/
-  final map = <String, dynamic>{
+  dynamic map = <String, dynamic>{
     "name": "Mohsen",
     "phone": 0512345678,
   };
+  // List <dynamic> map1=["name","fdf","phone", 003209];
+  // map1.where((map1.any((element) => false) == 4) => print(""));
 
   //12
   Laptop laptop1 = Laptop()
@@ -129,10 +132,32 @@ void main(List<String> arguments) {
   print(listOfHouses);
 
   //14
-  // Camera camera1 = Camera()
-  // ..id = 12345
-  // ..name = "Canon"
-  // ..price = 200000;
+  Camera camera = Camera();
+  print(camera._color);
+  camera.newColor = "White";
+  print(camera._color);
+
+  Camera camera1 = Camera()
+    .._id = 0987
+    .._brand = "Nikon"
+    .._color = "White"
+    .._price = 3400;
+
+  Camera camera2 = Camera()
+    .._id = 3785
+    .._brand = "Sony"
+    .._color = "Gray"
+    .._price = 5100;
+
+  Camera camera3 = Camera()
+    .._id = 1038
+    .._brand = "GoPro"
+    .._color = "Silver"
+    .._price = 2200;
+
+  print("Camera1 details: ID:${camera1._id} Brand:${camera1._brand} Color:${camera1._color} Price:${camera1._price}");
+  print("Camera2 details: ID:${camera2._id} Brand:${camera2._brand} Color:${camera2._color} Price:${camera2._price}");
+  print("Camera3 details: ID:${camera3._id} Brand:${camera3._brand} Color:${camera3._color} Price:${camera3._price}");
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -194,7 +219,7 @@ class Laptop {
   String? name;
   int? ram;
 
-  details() => print("$id \n $name \n $ram");
+  details() => print("$id \n$name \n$ram");
 }
 
 /*13. Develop a class called `"House"` with the properties `"id"`, "name"`, and 
@@ -215,7 +240,13 @@ class House {
       all the details.*/
 class Camera {
   int _id = 8869;
-  String _brand = "Cannon";
+  String _brand = "Canon";
   String _color = "Black";
   num _price = 4500;
+
+  set newColor(String color) {
+    _color = color;
+  }
+
+  String get newColor => _color;
 }
