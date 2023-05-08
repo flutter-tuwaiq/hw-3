@@ -244,7 +244,7 @@ int? hight ;
 // details.
 
 
-Camera c1 = Camera();
+ Camera c1 = Camera();
 // Camera c2 = Camera();
 // Camera c3 = Camera();
 
