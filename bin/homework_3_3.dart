@@ -20,13 +20,13 @@ int phone_number = 12345678;
 // 2. Prompt the user to provide the dimensions of a square, which
 // include its height and width.
 
-// print(" Enter the width of squar  =  ");
-// int? width ;
-// width = int.parse(stdin.readLineSync()!);  //input from user
-// print("Enter the hight of squar =  ");
+print(" Enter the width of squar  =  ");
+int? width ;
+width = int.parse(stdin.readLineSync()!);  //input from user
+print("Enter the hight of squar =  ");
 
-// int? hight ;
-// hight = int.parse(stdin.readLineSync()!); //input from user
+int? hight ;
+ hight = int.parse(stdin.readLineSync()!); //input from user
 
 
 
@@ -34,22 +34,23 @@ int phone_number = 12345678;
 
 //3. Develop a function that can compute the area of a square
 //using the user's input.
+
  print(" Enter the width of squar  =  ");
- int? width ;
-width = int.parse(stdin.readLineSync()!);  //input from user
+ int? width1;
+width1 = int.parse(stdin.readLineSync()!);  //input from user
  print("Enter the hight of squar =    ");
 
-int? hight ;
-// hight = int.parse(stdin.readLineSync()!); //input from user
+int? hight1 ;
+hight1 = int.parse(stdin.readLineSync()!); //input from user
 
-// comput(int hight , int width){
+comput(int hight , int width){
 
-// int result = hight*width;
-//   return result;
+int result = hight*width;
+return result;
 
-// }
+}
 
-// print(" area of a square is   ${comput(hight, width)}");
+print(" area of a square is   ${comput(hight, width)}");
 
 
 
@@ -59,19 +60,19 @@ int? hight ;
 // 4. Implement a Dart program that loops 100 times and checks if
 // each number is even or odd.
 
-// for(int i = 1 ; i <= 100 ; i++){
+for(int i = 1 ; i <= 100 ; i++){
 
-//    if(i%2==0){
+   if(i%2==0){
 
-//       print(" is even = $i");
-//     }
+      print(" is even = $i");
+    }
 
-//    else{
+   else{
 
-//     print(" is odd = $i");
+    print(" is odd = $i");
 
-//     }
-// }
+    }
+}
 
 
 //--------------------------------------------------//
@@ -82,46 +83,43 @@ int? hight ;
 // basic arithmetic operations such as addition, subtraction,
 // multiplication, and division.
 
-//     print(" enter num1 = ");
-//     int? num1 ;
-//     num1 = int.parse(stdin.readLineSync()!);
+print(" enter num1 = ");
+ int? num1;
+ num1 = int.parse(stdin.readLineSync()!);
 
-//     print(" enter num2 = ");
-//     int? num2;
-//     num2 = int.parse(stdin.readLineSync()!);
+  print(" enter num2 = ");
+  int? num2;
+   num2 = int.parse(stdin.readLineSync()!);
 
-//     print(" enter oprator  = * , - , + , /");
-//     String? opi;
-//     opi = stdin.readLineSync();
+    print(" Choose an operation  = * , - , + , %");
+   String? opi;
+    opi = stdin.readLineSync();
 
-// switch(opi) { 
-//    case "*" : { 
-//       int result = num1*num2;
-//        print(" result =  $result");
+ switch(opi) { 
+ case "*" : { 
+    int result = num1*num2;
+      print(" result =  $result");
 
-//    } 
-//    break; 
+  } 
+   break; 
   
-//    case  "+": { 
-//       int result = num1+num2;
-//        print(" result =  $result");
-//    } 
-//    break; 
-//     case "-": { 
-//       int result = num1-num2;
-//        print(" result =  $result");
-//    } 
-//    break; 
-//    case "/": { 
-//       int result = num1/num2;
-//        print(" result =  $result");
-//    } 
-//    break;   
-//    default: { 
-//       //statements;  
-//    }
-//    break; 
-// } 
+  case  "+": { 
+     int result = num1+num2;
+      print(" result =  $result");
+   } 
+   break; 
+    case "-": { 
+      int result = num1-num2;
+       print(" result =  $result");
+   } 
+  break; 
+   case "/": { 
+      int result = num1%num2;
+       print(" result =  $result");
+    } 
+   break;   
+   
+ } 
 
 
 
@@ -133,20 +131,23 @@ int? hight ;
 // password.
 
 
+
+
 //7. Write a function in Dart that can reverse a given string.
 
-
+ var my_name = "Haifa";
+  print(my_name.split('').reversed.join()); 
 
 //8. Generate a list of names and print them all using a loop.
 
-  //List names = ["HAIFA" ,"SHAKER","ALSHAREEF"];
+  List names = ["HAIFA" ,"SHAKER","ALSHAREEF"];
 
-//  for(int i = 0 ; i<=names.length-1 ; i++){
+for(int i = 0 ; i<=names.length-1 ; i++){
 
 
-//   print(names[i]);
+  print(names[i]);
 
-//  }
+ }
 
 
 // 10. Declare an empty list of strings called "days", then use the
@@ -154,17 +155,17 @@ int? hight ;
 // week, and finally, print all the days
 
 
-// List days = [];
+List days = [];
 
-// days.add("Sunday");
-// days.add("Monday");
-// days.add("Tuseday");
-// days.add("Wensday");
-// days.add("Tharsday");
-// days.add("Friday");
-// days.add("Saturday");
+ days.add("Sunday");
+days.add("Monday");
+days.add("Tuseday");
+ days.add("Wensday");
+days.add("Tharsday");
+days.add("Friday");
+days.add("Saturday");
 
-// print(days);
+ print(days);
 
 
 
@@ -172,17 +173,9 @@ int? hight ;
 // values in it. Then, use the "where" method to find all keys
 // that have a length of four.
 
-//Map j = { "name":"jio", "phone":"kk" , "hoo":"llo"};
-//j.removeWhere((key,value) => key.length==4);
-//print(j.keys.where((keys) => keys.length==4,));
-// j.removeWhere((key, value){
-//   bool f =key.length== 3;
-//     return f;
-//   });
-//print(j);
-//List<Map> users = [{ "name":"jior", "phone":"kk" , "pp":"kk44" }];
-//// users.where((name) => k);
-      
+Map map = { "name":"Haifa", "phone":12345};
+print(map.keys.where((keys) => keys.length==4,));
+
 
 
 
@@ -192,27 +185,27 @@ int? hight ;
 //"name", and "ram". Generate three objects of this class
 //and print all the details.
 
-// Laptop op1 = Laptop();
-// op1.id=89;
-// op1.name="mac";
-// op1.ram=11433;
+Laptop op1 = Laptop();
+ op1.id=89;
+ op1.name="mac";
+ op1.ram=11433;
 
-// print(" ID = ${op1.id} "+ " Name = ${op1.name}"+" Ram = ${op1.ram}");
+print(" ID = ${op1.id} "+ " Name = ${op1.name}"+" Ram = ${op1.ram}");
 
 
-// Laptop op2 = Laptop();
-// op2.id =77;
-// op2.name ="del";
-// op2.ram =75567;
+Laptop op2 = Laptop();
+ op2.id =77;
+ op2.name ="del";
+op2.ram =75567;
 
-// print(" ID = ${op2.id} "+ " Name = ${op2.name}"+" Ram = ${op2.ram}");
+print(" ID = ${op2.id} "+ " Name = ${op2.name}"+" Ram = ${op2.ram}");
 
-// Laptop op3 = Laptop();
-// op3.name ="samsung";
-// op3.ram =75567;
-// op3.id =34;
+Laptop op3 = Laptop();
+ op3.name ="samsung";
+ op3.ram =75567;
+ op3.id =34;
 
-// print(" ID = ${op3.id} "+ " Name = ${op3.name}"+" Ram = ${op3.ram}");
+ print(" ID = ${op3.id} "+ " Name = ${op3.name}"+" Ram = ${op3.ram}");
 
 
 // 13. Develop a class called "House" with the properties "id",
@@ -220,20 +213,20 @@ int? hight ;
 // Generate three objects of this class, add them to a list, and
 // print all the details.
 
-// House h1 = House(22, "KK", 344);
-// House h2 = House(34, "KKFF", 567);
-// House h3 = House(66, "DF", 765);
+House house1 = House(22, "black house", 34334);
+House house2 = House(34, "white house", 54567);
+House house3 = House(66, "dark house", 76555);
 
-// List hh= [h1,h2,h3];
+List list= [house1,house2,house3];
 
-// for(int i = 0 ; i<=hh.length-1;i++){
+for(int i = 0 ; i<=list.length-1;i++){
 
-//  print(hh[i].name);
-//  print(hh[i].id);
-//  print(hh[i].price);
+print(list[i].name);
+ print(list[i].id);
+ print(list[i].price);
 
 
-// }
+}
 
 
 
@@ -244,11 +237,19 @@ int? hight ;
 // details.
 
 
- Camera c1 = Camera();
-// Camera c2 = Camera();
-// Camera c3 = Camera();
+ Camera c1 = Camera(17, 'lg', 'red', 5000);
+ Camera c2 = Camera(29, 'samsung', 'pink', 8900);
+  Camera c3 = Camera(35, 'hwaii', 'blue', 1240);
 
-// print(c1.id);
-// print(c1.color = "jjj");
-// }
+  List list2= [c1,c2,c3];
+
+for(int i = 0 ; i<=list2.length-1;i++){
+
+print(list2[i].id);
+ print(list2[i].brand);
+  print(list2[i].color);
+ print(list2[i].price);
+
+
 }
+  }

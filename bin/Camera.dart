@@ -1,10 +1,9 @@
 class Camera{
 
-  var _id = 123;
-  var _brand = "cnon";
-  var _color = "black";
-  var _price = 1908;
-
+  var _id ;
+  var _brand ;
+  var _color ;
+  var _price ;
 
 
 int get id {
@@ -15,12 +14,35 @@ void set id(int id) {
       this._id= id;
    }
 
+String get color{
 
+return _color;
+}
 
-
-
- void set color (String color) {
+ void set Setcolor (String color) {
       this._color = color;
    }
+
+
+String get Getbrand{
+
+return _brand;
+}
+
+ void set Setbrand (String brand) {
+      this._brand = brand;
+   }
+
+
+int get Getprice{
+
+return  _price;
+}
+
+ void set Setprice (int price) {
+      this._price = price;
+   }
+
+     Camera(this._id, this._brand, this._color, this._price);
 
 }
